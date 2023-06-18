@@ -27,6 +27,9 @@ Para a confecção dos códigos, foi utilizado o Matlab R2017a e foi tomado como
 - Teste da matriz Jacobiana;
 - Priori Populacional;
 - Estimação Individual;
+- Função EVIU;
+- Função de Estimação Populacional;
+- Função do algoritmo "Coordinated Descent";
 - Grafícos Obtidos
 
 # Referências
