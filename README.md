@@ -11,7 +11,24 @@ O escopo deste projeto consiste em, a partir dos modelos de crescimentos estudad
 
 # Descrição do projeto
 
+Foi utilizado como base de dados presente no artigo [2], que consiste em medidas de crescimento de tumores em uma população de 66 ratos com o carcinoma LM2-4LUC+ implantadas. O volume inicial foi de $1{mm^3}$ implantados em todos os ratos da população. 
+
+Para caracterizar o crescimento dos tumores, empregou-se o modelo de Richards, mostrado abaixo, com o intuito de verificar a eficiência da aplicação dos conceitos de Efeitos Mistos não-linear e da distribuição Normal-Laplace para a estimação dos parâmetros individuais, comparado com o uso da tradicional distribuição Gaussiana.
+
+$$
+    V(t) = \frac{V_{0}.K}{[V_{0}^{\nu}+(K^{\nu}-V_{0}^{\nu})e^{-r\nu t}]^{1/\nu}}
+$$
+
+Para a confecção dos códigos, foi utilizado o Matlab R2017a e foi tomado como base os códigos presentes em [1], mas adaptando os códigos para o modelo de Richards.
+
 # Conteúdo do repositório
+
+- README.md;
+- Teste da matriz Jacobiana;
+- Priori Populacional;
+- Estimação Individual;
+- Grafícos Obtidos
 
 # Referências
 [1] R. F. S. Marcos R. Fernandes and J. B. R. do Val. Robust Mixed-Effect Estimation of Tumor Growth and Age based on Gompertz Model. IEEE Control Systems Letters, 7:31–36, 2023
+[2] C. V. et al. Population modeling of tumor growth curves and the reduced gompertz model improve prediction of the age of experimental tumors. 16:e1007178
