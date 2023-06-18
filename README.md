@@ -19,7 +19,7 @@ $$
     V(t) = \frac{V_{0}.K}{[V_{0}^{\nu}+(K^{\nu}-V_{0}^{\nu})e^{-r\nu t}]^{1/\nu}}
 $$
 
-Para a confecção dos códigos, foi utilizado o Matlab R2017a e foi tomado como base os códigos presentes em [1], mas adaptando os códigos para o modelo de Richards.
+Para a confecção dos códigos, foi utilizado o Matlab R2017a e foi tomado como base os códigos presentes em [1], mas adaptando os códigos de priori populacional e de estimação individual para o modelo de Richards.
 
 # Conteúdo do repositório
 
