@@ -34,7 +34,6 @@ for i=1:M
     age(i)=data0(end,2);
     hat_age=hthetaGom(3,i); 
     hat_age2=hthetaRic(4,i);
-    % hat_age3=hthetaLog(3,i);
     %% residual
     ageErr(i)=age(i)-hat_age; %Gompertz
     ageErrRic(i)=age(i)-hat_age2; %Richards
@@ -52,10 +51,7 @@ plot(err,normpdf(err,mean(ageErr),std(ageErr)),'Color',colors('red'),...
     'LineWidth',1.5)
 plot(err,normpdf(err,mean(ageErrRic),std(ageErrRic)),'Color',colors('blue'),...
     'LineWidth',1.5)
-% plot(err,normpdf(err,mean(ageErrLog),std(ageErrLog)),'Color',colors('green'),...
-%     'LineWidth',1.5)
 legend('Richards','Gompertz')
-% legend('Richards','Gompertz','Logistic')
 xlabel('Age Error (days)')
 ylabel('pdf')
 drawnow
@@ -163,7 +159,6 @@ end
 pd=plot(datai(:,2),datai(:,3),'k.','MarkerSize',10);
 end
 legend([p2,p3,pd],'Gompertz','Richards','Individual Data','Orientation','horizontal')
-% legend([p2,p3,p4,pd],'Gompertz','Richards','Logistic','Individual Data','Orientation','horizontal')
 % saveas(gcf, '../figComparativo.png')
 
 
